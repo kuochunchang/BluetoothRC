@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">rc</string>
+    <string name="default_string">default</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="aux_settings">Aux</string>
+    <string name="bt_connection">Bluetooth</string>
+    <string name="title_activity_aux_setting">Aux Settings</string>
+    <string name="aux1">AUX 1</string>
+    <string name="aux2">AUX 2</string>
+    <string name="aux3">AUX 3</string>
+    <string name="aux4">AUX 4</string>
+    <string name="aux_low">LOW</string>
+    <string name="aux_mid">MID</string>
+    <string name="aux_high">HIGH</string>
+    <string name="title_activity_bluetooth_scan">BluetoothScanActivity</string>
+
+</resources>

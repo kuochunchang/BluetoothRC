@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="4"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="kc.rc.AuxSettingActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textLow"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/aux1"
+        android:textSize="@dimen/aux_setting_font_size" />
+
+    <SeekBar
+        android:id="@+id/SeekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/textLow"
+        android:layout_alignRight="@+id/textHigh" />
+
+    <TextView
+        android:id="@+id/textHigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textMid"
+        android:layout_alignBottom="@+id/textMid"
+        android:layout_marginLeft="60dp"
+        android:layout_toRightOf="@+id/textMid"
+        android:text="@string/aux_high" />
+
+    <TextView
+        android:id="@+id/textLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/textMid"
+        android:text="@string/aux_low" />
+
+    <TextView
+        android:id="@+id/textMid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textLow"
+        android:layout_alignBottom="@+id/textLow"
+        android:layout_centerHorizontal="true"
+        android:text="@string/aux_mid" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:text="@string/aux2"
+        android:textSize="@dimen/aux_setting_font_size" />
+
+    <SeekBar
+        android:id="@+id/SeekBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignLeft="@+id/SeekBar1"
+        android:layout_alignRight="@+id/SeekBar1" />
+
+    <SeekBar
+        android:id="@+id/SeekBar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView02"
+        android:layout_alignLeft="@+id/SeekBar2"
+        android:layout_alignRight="@+id/SeekBar2" />
+
+    <SeekBar
+        android:id="@+id/SeekBar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView03"
+        android:layout_alignLeft="@+id/SeekBar3"
+        android:layout_alignRight="@+id/SeekBar3" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_below="@+id/TextView02"
+        android:layout_marginTop="20dp"
+        android:text="@string/aux4"
+        android:textSize="@dimen/aux_setting_font_size" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginTop="21dp"
+        android:text="@string/aux3"
+        android:textSize="@dimen/aux_setting_font_size" />
+
+</RelativeLayout><!-- From: file:/home/guojun/AndroidStudioProjects/BluetoothRC/app/src/main/res/layout/activity_aux_setting.xml -->

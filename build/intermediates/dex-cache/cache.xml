@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/guojun/AndroidStudioProjects/BluetoothRC/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
+        <dex dex="/home/guojun/AndroidStudioProjects/BluetoothRC/app/build/intermediates/pre-dexed/debug/classes-74f736e0c019077cc82ddee317808525dcf9230e.jar" />
+    </item>
+    <item
+        jar="/opt/eclipse/adt-bundle-linux-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="/home/guojun/AndroidStudioProjects/BluetoothRC/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-be51e7e89f36e2cbe96d80881c82e3b225052b5b.jar" />
+    </item>
+    <item
+        jar="/home/guojun/AndroidStudioProjects/BluetoothRC/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="/home/guojun/AndroidStudioProjects/BluetoothRC/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-bc6778015a16f01c3b3a4e067ebc205a3d443542.jar" />
+    </item>
+    <item
+        jar="/home/guojun/AndroidStudioProjects/BluetoothRC/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="/home/guojun/AndroidStudioProjects/BluetoothRC/app/build/intermediates/pre-dexed/debug/classes-21c1a062ee84131875864299374ab1d885537bc4.jar" />
+    </item>
+
+</items>
