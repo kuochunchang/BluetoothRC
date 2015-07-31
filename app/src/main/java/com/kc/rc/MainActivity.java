@@ -15,7 +15,7 @@ public class MainActivity extends ActionBarActivity {
 
 	String tag = MainActivity.class.getSimpleName();
 	ChannelValueService mChannelValueService;
-	ChannelServiceConnection mChannlValueServiceConnection;
+	ChannelServiceConnection mChannelValueServiceConnection;
 
 	class ChannelServiceConnection implements ServiceConnection {
 
@@ -35,17 +35,17 @@ public class MainActivity extends ActionBarActivity {
 	}
 
 	private void initService() {
-		mChannlValueServiceConnection = new ChannelServiceConnection();
+		mChannelValueServiceConnection = new ChannelServiceConnection();
 
 		boolean ret = bindService(new Intent(this, ChannelValueService.class),
-				mChannlValueServiceConnection, Context.BIND_AUTO_CREATE);
+				mChannelValueServiceConnection, Context.BIND_AUTO_CREATE);
 		Log.i(tag, "initService() bound value: " + ret);
 
 	}
 
 	private void releaseService() {
-		unbindService(mChannlValueServiceConnection);
-		mChannlValueServiceConnection = null;
+		unbindService(mChannelValueServiceConnection);
+		mChannelValueServiceConnection = null;
 		Log.d(tag, "releaseService(): unbound.");
 	}
 

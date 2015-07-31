@@ -1,9 +1,5 @@
 package com.kc.rc;
 
-import java.lang.ref.WeakReference;
-
-import com.kc.rc.BluetoothSetupActivity.IncomingHandler;
-
 import android.app.Service;
 import android.content.ComponentName;
 import android.content.Context;
@@ -15,6 +11,8 @@ import android.os.IBinder;
 import android.os.Message;
 import android.util.Log;
 import android.widget.Toast;
+
+import java.lang.ref.WeakReference;
 
 public class ChannelValueService extends Service {
 	private ChannelValues channelValues = new ChannelValues();
@@ -28,11 +26,12 @@ public class ChannelValueService extends Service {
 
 	}
 
-	private void initBluetoothServie() {
+	private void initBluetoothService() {
 		mBluetoothServiceConnection = new BluetoothServiceConnection();
 		bindService(
 				new Intent(ChannelValueService.this, BluetoothService.class),
 				mBluetoothServiceConnection, Context.BIND_AUTO_CREATE);
+
 	}
 
 	private String mLastValues = "";
@@ -42,7 +41,7 @@ public class ChannelValueService extends Service {
 		Log.d(tag, channelValues.toString());
 
 		if (mBluetooth == null) {
-			initBluetoothServie();
+			initBluetoothService();
 		} else {
 
 		//	if (mBluetooth.getState() != BluetoothService.STATE_CONNECTED) {
@@ -75,6 +74,8 @@ public class ChannelValueService extends Service {
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
+		//unbindService(mBluetoothServiceConnection);
+		mBluetoothServiceConnection=null;
 		Log.d("ChannelValueService", "onDestroy()");
 	}
 
